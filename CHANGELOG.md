@@ -12,6 +12,12 @@ Int128 conversion functions.
 
 ## Notes
 
+### Version 0.2.0 - 15/6/2026
+
+Add
+
+- uInt128 struct. Arithmetical, equality and bitwise operators for the struct. Conversion functions.
+
 ### Version 0.1.1 - 14/6/2026
 
 Add

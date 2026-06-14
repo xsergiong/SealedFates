@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SealedFates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4744fe221c8055c1a7ed4b565b7ec56b99e8db40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7219d5df2fe632a351869f1bd00395d696d44614")]
 [assembly: System.Reflection.AssemblyProductAttribute("SealedFates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SealedFates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
