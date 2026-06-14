@@ -493,7 +493,7 @@
         #endregion
 
         #region CONVERSION FUNCTIONS
-        public byte[] ToByteArray()
+        public readonly byte[] ToByteArray()
         {
             ulong low = Low;
             long high = High;
@@ -507,7 +507,48 @@
 
             return bytes.ToArray();
         }
+        public readonly int[] ToBitArray()
+        {
+            Int128 number = this;
 
+            byte[] byteArray = number.ToByteArray();
+
+            System.Collections.BitArray bitArray = new(byteArray);
+
+            int[] bits = bitArray.Cast<bool>().Select(bit => bit ? 1 : 0).ToArray();
+
+            return bits;
+        }
+        public readonly string ToBitString()
+        {
+            Int128 number = this;
+
+            int[] bitArray = number.ToBitArray();
+
+            string bitString = "";
+
+            for (int i = bitArray.Length; i > 0; i--)
+                bitString += bitArray[i].ToString();
+
+            return bitString;
+        }
+        public override readonly string ToString()
+        {
+            Int128 number = this;
+
+            System.Numerics.BigInteger value = (System.Numerics.BigInteger)(number.High * Math.Pow(2, 64) + number.Low);
+
+            return value.ToString();
+        }
+        public readonly string ToHex()
+        {
+            Int128 number = this;
+
+            string lowString = number.Low.ToString("X");
+            string highString = number.High.ToString("X");
+
+            return highString + lowString;
+        }
         #endregion
 
         public override int GetHashCode()
