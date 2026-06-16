@@ -492,6 +492,29 @@
         }
         #endregion
 
+        #region CONVERSION OPERATORS
+        public static explicit operator uInt128(ulong value)
+        {
+            return new uInt128(value, 0);
+        }
+        public static explicit operator uInt128(long value)
+        {
+            return new uInt128((ulong)value, 0);
+        }
+        public static explicit operator uInt128(uint value)
+        {
+            return new uInt128(value, 0);
+        }
+        public static explicit operator uInt128(int value)
+        {
+            return new uInt128((ulong)value, 0);
+        }
+        public static explicit operator uInt128(Int128 value)
+        {
+            return new uInt128(value.Low, (ulong)value.High);
+        }
+        #endregion
+
         #region CONVERSION FUNCTIONS
         public byte[] ToByteArray()
         {

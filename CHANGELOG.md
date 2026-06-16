@@ -4,13 +4,19 @@
 
 ## What's new?
 
-The Int128 struct that works just like a regular Int32 or Int64.
+uInt128 struct that works like a regular unsigned integer type.
 
-Int128 conversion functions.
+Int128 and uInt128 explicit conversion operators.
 
 ---
 
 ## Notes
+
+### Version 0.2.1 - 15/6/2026
+
+Add
+
+- uInt128 struct. Arithmetical, equality and bitwise operators for the struct. Conversion functions.
 
 ### Version 0.2.0 - 15/6/2026
 
