@@ -4,11 +4,18 @@
 
 ## What's new?
 
-Int256 struct that works like a regular unsigned integer type.
+Randomizer method for Int128 inside the SealedFates.Math namespace.
 
 ---
 
 ## Notes
+
+### Version 1.0.0 - 19/6/2026
+
+Add
+
+- SealedFates.Math namespace.
+- Random class. Methods: RandomInt128(min, max)
 
 ### Version 0.3.0 - 19/6/2026
 
