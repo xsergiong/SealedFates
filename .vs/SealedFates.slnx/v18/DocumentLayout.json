@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Int256.cs",
+              "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int256.cs",
+              "RelativeDocumentMoniker": "Int256.cs",
+              "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int256.cs",
+              "RelativeToolTip": "Int256.cs",
+              "ViewState": "AgIAAOgBAAAAAAAAAAAWwPQBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T08:54:54.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "uInt128.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\uInt128.cs",
               "RelativeDocumentMoniker": "uInt128.cs",
               "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\uInt128.cs",
               "RelativeToolTip": "uInt128.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwPcBAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAACMCAAAAAAAAAAAIwDQCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T21:13:21.835Z",
               "EditorCaption": ""
@@ -41,7 +58,7 @@
               "RelativeDocumentMoniker": "Int128.cs",
               "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int128.cs",
               "RelativeToolTip": "Int128.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAACAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcCAAAAAAAAAAAwwC8CAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T12:14:55.974Z",
               "EditorCaption": ""

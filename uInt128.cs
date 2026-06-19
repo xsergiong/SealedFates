@@ -557,9 +557,10 @@
         }
         public override readonly string ToString()
         {
-            uInt128 number = this;
+            System.Numerics.BigInteger high = (System.Numerics.BigInteger)High;
+            System.Numerics.BigInteger low = (System.Numerics.BigInteger)Low;
 
-            System.Numerics.BigInteger value = (System.Numerics.BigInteger)(number.High * Math.Pow(2, 64) + number.Low);
+            System.Numerics.BigInteger value = high * (System.Numerics.BigInteger)Math.Pow(2, 64) + low;
 
             return value.ToString();
         }
