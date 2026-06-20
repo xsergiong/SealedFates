@@ -1,12 +1,10 @@
-namespace SealedFates.Math
+namespace SealedFates
 {
-	using System;
-	using System.Security.Cryptography;
-    using Int128 = SealedFates.Int128;
+    using System.Security.Cryptography;
 
-	public class Random
+    public class Random
 	{
-		public Int128 RandomInt128(Int128 min, Int128 max)
+		public Int128 GetInt128(Int128 min, Int128 max)
 		{
 			ulong minLow = min.Low;
 			long minHigh = min.High;
@@ -64,6 +62,11 @@ namespace SealedFates.Math
                (ulong)(p1 * Math.Pow(2, 32) + p0),
                (long)(p3 * Math.Pow(2, 32) + p2)
             );
+        }
+
+        public Int128 Abs(Int128 value)
+        {
+            return new Int128(value.Low, Math.Abs(value.High));
         }
     }
 }

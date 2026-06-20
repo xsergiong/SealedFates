@@ -4,11 +4,19 @@
 
 ## What's new?
 
-Randomizer method for Int128 inside the SealedFates.Math namespace.
+
+
+Random class with method for Int128
 
 ---
 
 ## Notes
+
+### Version 1.0.1 - 19/6/2026
+
+Remove
+
+- SealedFates.Math namespace.
 
 ### Version 1.0.0 - 19/6/2026
 
