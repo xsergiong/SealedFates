@@ -4,7 +4,7 @@
 
 ## What's new?
 
-
+Math class for Int128 & Int256
 
 Random class with method for Int128
 
@@ -12,7 +12,17 @@ Random class with method for Int128
 
 ## Notes
 
-### Version 1.0.1 - 19/6/2026
+### Version 1.1.0 - 20/6/2026
+
+Add
+
+- Math class with Abs, Clamp, Min & Max methods for Int128 & Int256. 
+
+Fix
+
+- SealedFates.Math & System.Math collision
+
+### Version 1.0.1 - 20/6/2026
 
 Remove
 

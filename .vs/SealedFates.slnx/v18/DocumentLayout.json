@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\random.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:random.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Math.cs",
+              "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Math.cs",
+              "RelativeDocumentMoniker": "Math.cs",
+              "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Math.cs",
+              "RelativeToolTip": "Math.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T19:52:31.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Random.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Random.cs",
               "RelativeDocumentMoniker": "Random.cs",
               "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Random.cs",
               "RelativeToolTip": "Random.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-19T16:58:23.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Int256.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int256.cs",
               "RelativeDocumentMoniker": "Int256.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "uInt128.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\uInt128.cs",
               "RelativeDocumentMoniker": "uInt128.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Int128.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int128.cs",
               "RelativeDocumentMoniker": "Int128.cs",

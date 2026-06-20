@@ -23,8 +23,8 @@ namespace SealedFates
 
 				return new Int128
 				(
-					(ulong)(p1 * Math.Pow(2, 32) + p0),
-					(long)(p3 * Math.Pow(2, 32) + p2)
+					(ulong)(p1 * System.Math.Pow(2, 32) + p0),
+					(long)(p3 * System.Math.Pow(2, 32) + p2)
 				);
             }
 
@@ -37,8 +37,8 @@ namespace SealedFates
 
                 return new Int128
                 (
-                    (ulong)(p1 * Math.Pow(2, 32) + p0),
-                    (long)(p3 * Math.Pow(2, 32) + p2)
+                    (ulong)(p1 * System.Math.Pow(2, 32) + p0),
+                    (long)(p3 * System.Math.Pow(2, 32) + p2)
                 );
             }
 
@@ -50,8 +50,8 @@ namespace SealedFates
 
                 return new Int128
                 (
-                    (ulong)(p1 * Math.Pow(2, 32) + p0),
-                    (long)(p3 * Math.Pow(2, 32) + p2)
+                    (ulong)(p1 * System.Math.Pow(2, 32) + p0),
+                    (long)(p3 * System.Math.Pow(2, 32) + p2)
                 );
             }
 
@@ -59,14 +59,14 @@ namespace SealedFates
 
             return new Int128
             (
-               (ulong)(p1 * Math.Pow(2, 32) + p0),
-               (long)(p3 * Math.Pow(2, 32) + p2)
+               (ulong)(p1 * System.Math.Pow(2, 32) + p0),
+               (long)(p3 * System.Math.Pow(2, 32) + p2)
             );
         }
 
         public Int128 Abs(Int128 value)
         {
-            return new Int128(value.Low, Math.Abs(value.High));
+            return new Int128(value.Low, System.Math.Abs(value.High));
         }
     }
 }
