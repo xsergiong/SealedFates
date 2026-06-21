@@ -342,8 +342,6 @@
             if (index > 127 || index < 0)
                 throw new ArgumentOutOfRangeException();
 
-            Int128 a = this;
-
             if (index < 64)
                 return (Low & (1UL << index)) != 0;
             else
@@ -390,7 +388,7 @@
             System.Numerics.BigInteger high = (System.Numerics.BigInteger)High;
             System.Numerics.BigInteger low = (System.Numerics.BigInteger)Low;
 
-            System.Numerics.BigInteger value = high * (System.Numerics.BigInteger)Math.Pow(2, 64) + low;
+            System.Numerics.BigInteger value = high * (System.Numerics.BigInteger)System.Math.Pow(2, 64) + low;
 
             return value.ToString();
         }

@@ -4,6 +4,10 @@
 
 ## What's new?
 
+Fixed uInt128.
+
+Fixed Int128.
+
 Math class for Int128 & Int256
 
 Random class with method for Int128
@@ -11,6 +15,28 @@ Random class with method for Int128
 ---
 
 ## Notes
+
+### Version 1.1.2 - 20/6/2026
+
+Fix
+
+- Operators / and % for uInt128.
+- SetBit method for uInt128.
+
+Remove
+
+- ToByteArray, ToBitArray & ToBitString methods for uInt128.
+
+### Version 1.1.1 - 21/6/2026
+
+Fix
+
+- Operators / and % for Int128.
+- SetBit method for Int128.
+
+Remove
+
+- ToByteArray, ToBitArray & ToBitString methods for Int128.
 
 ### Version 1.1.0 - 20/6/2026
 
@@ -20,7 +46,7 @@ Add
 
 Fix
 
-- SealedFates.Math & System.Math collision
+- SealedFates.Math & System.Math collision.
 
 ### Version 1.0.1 - 20/6/2026
 

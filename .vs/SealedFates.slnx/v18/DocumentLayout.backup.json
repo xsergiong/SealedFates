@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\random.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:random.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:math.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:uint128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int128.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\random.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:random.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|c:\\users\\snuno\\onedrive\\desktop\\sealedfates\\int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76DE2E39-8708-F8BA-8DD9-FF74190D6BE7}|SealedFates.csproj|solutionrelative:int256.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Math.cs",
+              "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Math.cs",
+              "RelativeDocumentMoniker": "Math.cs",
+              "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Math.cs",
+              "RelativeToolTip": "Math.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T19:52:31.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Random.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Random.cs",
               "RelativeDocumentMoniker": "Random.cs",
               "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Random.cs",
               "RelativeToolTip": "Random.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T16:58:23.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T16:58:23.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Int256.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int256.cs",
               "RelativeDocumentMoniker": "Int256.cs",
@@ -63,19 +79,21 @@
               "RelativeToolTip": "uInt128.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T21:13:21.835Z"
+              "WhenOpened": "2026-06-14T21:13:21.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Int128.cs",
               "DocumentMoniker": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int128.cs",
               "RelativeDocumentMoniker": "Int128.cs",
               "ToolTip": "C:\\Users\\snuno\\OneDrive\\Desktop\\SealedFates\\Int128.cs",
               "RelativeToolTip": "Int128.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8CAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T12:14:55.974Z"
+              "WhenOpened": "2026-06-14T12:14:55.974Z",
+              "EditorCaption": ""
             }
           ]
         }
