@@ -26,16 +26,6 @@
 
             return new Int128(low, high);
         }
-        public void operator +=(Int128 b)
-        {
-            ulong low = Low + b.Low;
-            long overflow = (low < Low) ? 1 : 0;
-
-            long high = High + b.High + overflow;
-
-            Low = low;
-            High = high;
-        }
         public static Int128 operator -(Int128 a, Int128 b)
         {
             ulong low = a.Low - b.Low;
@@ -44,36 +34,6 @@
             long high = a.High - b.High - overflow;
 
             return new Int128(low, high);
-        }
-        public void operator -=(Int128 b)
-        {
-            ulong low = Low - b.Low;
-            long overflow = (low > Low) ? 1 : 0;
-
-            long high = High - b.High - overflow;
-
-            Low = low;
-            High = high;
-        }
-        public void operator ++()
-        {
-            ulong low = Low + 1;
-            long overflow = (low < Low) ? 1 : 0;
-
-            long high = High + overflow;
-
-            Low = low;
-            High = high;
-        }
-        public void operator --()
-        {
-            ulong low = Low - 1;
-            long overflow = (low > Low) ? 1 : 0;
-
-            long high = High - overflow;
-
-            Low = low;
-            High = high;
         }
         public static Int128 operator *(Int128 a, Int128 b)
         {
@@ -112,45 +72,7 @@
 
             return new Int128(low, (long)high);
         }
-        public void operator *=(Int128 b)
-        {
-            ulong aLow = Low;
-            ulong bLow = b.Low;
-
-            ulong aHigh = (ulong)High;
-            ulong bHigh = (ulong)b.High;
-
-            ulong p0Low = aLow * bLow;
-            ulong p0High = MulHigh(aLow, bLow);
-
-            ulong p1Low = aLow * bHigh;
-            ulong p1High = MulHigh(aLow, bHigh);
-
-            ulong p2Low = aHigh * bLow;
-            ulong p2High = MulHigh(aHigh, bLow);
-
-            ulong p3 = aHigh * bHigh;
-
-            ulong low = p0Low;
-
-            ulong carry = p0High;
-
-            ulong mid = p1Low + p2Low + carry;
-
-            //Overflow detection
-            if (mid < p1Low)
-                carry++;
-            if (mid < p2Low)
-                carry++;
-            if (mid < carry)
-                carry++;
-
-            ulong high = p3 + p1High + p2High + carry;
-
-            Low = low;
-            High = (long)high;
-        }
-
+       
         public static ulong MulHigh(ulong a, ulong b)
         {
             ulong a0 = (uint)a;
@@ -172,6 +94,16 @@
         {
             if (divisor == Zero)
                 throw new DivideByZeroException();
+            if (dividend == Zero)
+                return Zero;
+
+            bool sign = dividend >= Zero;
+
+            if (dividend < Zero)
+                dividend = new Int128(dividend.Low, -dividend.High);
+            if (divisor < Zero)
+                divisor = new Int128(divisor.Low, -divisor.High);
+
 
             Int128 quotient = Zero;
             Int128 remainder = Zero;
@@ -181,7 +113,7 @@
                 remainder <<= 1;
 
                 if (dividend.GetBit(i))
-                    remainder.Low |= 1;
+                    remainder |= new Int128(1, 0);
 
                 if (remainder >= divisor)
                 {
@@ -189,41 +121,29 @@
                     quotient.SetBit(i);
                 }
             }
+
+            if (!sign)
+                quotient = new Int128(quotient.Low, -quotient.High);
 
             return quotient;
         }
-        public void operator /=(Int128 divisor)
-        {
-            if (divisor == Zero)
-                throw new DivideByZeroException();
 
-            Int128 dividend = this;
-
-            Int128 quotient = Zero;
-            Int128 remainder = Zero;
-
-            for (int i = 127; i >= 0; i--)
-            {
-                remainder <<= 1;
-
-                if (dividend.GetBit(i))
-                    remainder.Low |= 1;
-
-                if (remainder >= divisor)
-                {
-                    remainder -= divisor;
-                    quotient.SetBit(i);
-                }
-            }
-
-            Low = quotient.Low;
-            High = quotient.High;
-        }
         public static Int128 operator %(Int128 dividend, Int128 divisor)
         {
             if (divisor == Zero)
                 throw new DivideByZeroException();
+            if (dividend == Zero)
+                return Zero;
 
+            bool sign = dividend >= Zero;
+
+            if (dividend < Zero)
+                dividend = new Int128(dividend.Low, -dividend.High);
+            if (divisor < Zero)
+                divisor = new Int128(divisor.Low, -divisor.High);
+
+
+            Int128 quotient = Zero;
             Int128 remainder = Zero;
 
             for (int i = 127; i >= 0; i--)
@@ -231,36 +151,18 @@
                 remainder <<= 1;
 
                 if (dividend.GetBit(i))
-                    remainder.Low |= 1;
+                    remainder |= new Int128(1, 0);
 
                 if (remainder >= divisor)
+                {
                     remainder -= divisor;
+                }
             }
+
+            if (!sign)
+                remainder = new Int128(remainder.Low, -remainder.High);
 
             return remainder;
-        }
-        public void operator %=(Int128 divisor)
-        {
-            if (divisor == Zero)
-                throw new DivideByZeroException();
-
-            Int128 dividend = this;
-
-            Int128 remainder = Zero;
-
-            for (int i = 127; i >= 0; i--)
-            {
-                remainder <<= 1;
-
-                if (dividend.GetBit(i))
-                    remainder.Low |= 1;
-
-                if (remainder >= divisor)
-                    remainder -= divisor;
-            }
-
-            Low = remainder.Low;
-            High = remainder.High;
         }
         #endregion
 
@@ -392,14 +294,6 @@
 
             return new Int128(low, high);
         }
-        public void operator &=(Int128 b)
-        {
-            ulong low = Low & b.Low;
-            long high = High & b.High;
-
-            Low = low;
-            High = high;
-        }
         public static Int128 operator |(Int128 a, Int128 b)
         {
             ulong low = a.Low | b.Low;
@@ -407,28 +301,12 @@
 
             return new Int128(low, high);
         }
-        public void operator |=(Int128 b)
-        {
-            ulong low = Low | b.Low;
-            long high = High | b.High;
-
-            Low = low;
-            High = high;
-        }
         public static Int128 operator ^(Int128 a, Int128 b)
         {
             ulong low = a.Low ^ b.Low;
             long high = a.High ^ b.High;
 
             return new Int128(low, high);
-        }
-        public void operator ^=(Int128 b)
-        {
-            ulong low = Low ^ b.Low;
-            long high = High ^ b.High;
-
-            Low = low;
-            High = high;
         }
         public static Int128 operator >>(Int128 a, int b)
         {
@@ -451,7 +329,7 @@
             ulong low = a.Low << lowOp;
             long high = a.High << b;
 
-            long carry = (long)a.Low >> (Math.Abs(lowOp - 64));
+            long carry = (long)a.Low >> (System.Math.Abs(lowOp - 64));
 
             return new Int128(low, high | carry);
         }
@@ -466,29 +344,20 @@
 
             Int128 a = this;
 
-            byte[] byteArray = a.ToByteArray();
-
-            System.Collections.BitArray bitArray = new System.Collections.BitArray(byteArray);
-
-            return bitArray.Get(index);
+            if (index < 64)
+                return (Low & (1UL << index)) != 0;
+            else
+                return (High & (1L << (index - 64))) != 0;
         }
-        public Int128 SetBit(int index)
+        public void SetBit(int index)
         {
             if (index > 127 || index < 0)
                 throw new ArgumentOutOfRangeException();
 
-            Int128 a = this;
-
-            long targetBit = ~(1 << index);
-
-            Int128 convertedTargetBit;
-
-            if (index > 63)
-                convertedTargetBit = new Int128(0, targetBit);
+            if (index < 64)
+                Low |= (1UL << index);
             else
-                convertedTargetBit = new Int128((ulong)targetBit, 0);
-
-            return a & convertedTargetBit;
+                High |= (1L << (index - 64));
         }
         #endregion
 
@@ -516,45 +385,6 @@
         #endregion
 
         #region CONVERSION FUNCTIONS
-        public readonly byte[] ToByteArray()
-        {
-            ulong low = Low;
-            long high = High;
-
-            var bytes = new Stack<byte>();
-
-            for (; low > 0; low >>= 8)
-                bytes.Push((byte)low);
-            for (; high > 0; high >>= 10)
-                bytes.Push((byte)high);
-
-            return bytes.ToArray();
-        }
-        public readonly int[] ToBitArray()
-        {
-            Int128 number = this;
-
-            byte[] byteArray = number.ToByteArray();
-
-            System.Collections.BitArray bitArray = new(byteArray);
-
-            int[] bits = bitArray.Cast<bool>().Select(bit => bit ? 1 : 0).ToArray();
-
-            return bits;
-        }
-        public readonly string ToBitString()
-        {
-            Int128 number = this;
-
-            int[] bitArray = number.ToBitArray();
-
-            string bitString = "";
-
-            for (int i = bitArray.Length; i > 0; i--)
-                bitString += bitArray[i].ToString();
-
-            return bitString;
-        }
         public override readonly string ToString()
         {
             System.Numerics.BigInteger high = (System.Numerics.BigInteger)High;
